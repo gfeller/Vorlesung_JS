@@ -1,0 +1,16 @@
+jQuery.fn.init = function( selector, context ) {
+    //...
+    if ( !selector ) {
+        return this;
+    }
+    // Handle HTML strings
+    if ( typeof selector === "string" ) {
+        //...
+    } else if ( selector.nodeType ) {
+        //...
+    } else if ( jQuery.isFunction( selector ) ) {
+        //...
+    }
+    //...
+    return jQuery.makeArray( selector, this );
+};
