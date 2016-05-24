@@ -3,7 +3,7 @@ function sayHi(where){
         where("hi");
     }
     catch(e){
-        console.log("error");
+        console.log(e);
     }
 }
 

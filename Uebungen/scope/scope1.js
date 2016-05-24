@@ -2,22 +2,19 @@ var globalObject = typeof(global) === "undefined" ? window : global; // browser 
 
 var a = 0;
 b = 0;
-var d = 5 ;
-
-function scope(d)
+function scope()
 {
     try {
-        console.log(1, a, b,c ,d); // weshalb crasht c?
+        console.log(1, c); // weshalb crasht c?
     }
     catch(e){
-        console.log(1, a, b ,d);
-        console.log(e);
+        console.log(1, e);
     }
     var b = 10;
     c = "ABC";
     a++;
     b++;
-    console.log(2, a, b, c, d);
+    console.log(2, a, b, c);
 }
 scope();
 console.log(3, a, b, c);
