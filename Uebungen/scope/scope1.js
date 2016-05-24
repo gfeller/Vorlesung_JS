@@ -6,7 +6,13 @@ var d = 5 ;
 
 function scope(d)
 {
-    console.log(1, a, b/*,c*/ ,d); // weshalb crasht c?
+    try {
+        console.log(1, a, b,c ,d); // weshalb crasht c?
+    }
+    catch(e){
+        console.log(1, a, b ,d);
+        console.log(e);
+    }
     var b = 10;
     c = "ABC";
     a++;
