@@ -11,7 +11,6 @@ for(var x in arr)
     console.log("for in", x + ":" + arr[x]);
 }
 
-
 for(var y in dummy)
 {
     console.log("dummy has property", y);
@@ -23,11 +22,6 @@ for(var z of arr)
 }
 
 /*
-
-
-
-
-
 for(var y in "Hallo")
 {
     console.log("String", y);

@@ -8,9 +8,6 @@ console.log("Mein Name ist: "+name +
 console.log(`Mein Name ist: ${name}
 Hobby: ${hobby}`);
 
-var x = `Mein Name ist: ${name}
-Hobby: ${hobby}`;
-
 //kann auch rechnen
 var a = 4;
 var b = 5;

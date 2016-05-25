@@ -9,7 +9,7 @@ for(let x = 1; x < 10; ++x){
 //console.log(x); //ReferenceError: x is not defined
 
 
-
+/*
 'use strict';
 for (var _x = 1; _x < 10; ++_x) {
     console.log(_x);
@@ -18,3 +18,4 @@ for (var _x = 1; _x < 10; ++_x) {
     }
 }
 console.log(x); //ReferenceError: x is not defined
+*/

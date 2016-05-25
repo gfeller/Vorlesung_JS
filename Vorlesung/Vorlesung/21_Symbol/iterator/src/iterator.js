@@ -12,7 +12,6 @@ function createMemberList(){
     }
 }
 
-
 var list = createMemberList();
 list.add("Michael");
 list.add("Silvan");

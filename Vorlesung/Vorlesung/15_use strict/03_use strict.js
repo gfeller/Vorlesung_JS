@@ -1,4 +1,6 @@
 //'use strict';
+global.width = 33;
+global.height = 44;
 var rect = {
     width: 100,
     height: 100,
@@ -6,5 +8,6 @@ var rect = {
         return this.width * this.height;
     }
 };
-var x = rect.area;
-x();
+var area = rect.area;
+console.log(rect.area());
+console.log(area());

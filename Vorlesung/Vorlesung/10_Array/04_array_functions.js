@@ -13,7 +13,6 @@ console.log("filter", x.join("-"));
 console.log("filter", x.join("-").split("-"));
 
 console.log("filter", x.reduce(function(previousValue, currentValue, currentIndex, array) {
-    //console.log(currentIndex,previousValue);
     return previousValue + currentValue;
 }));
 
