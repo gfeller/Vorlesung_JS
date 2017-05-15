@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM Example</title>
+</head>
+<body>
+    <form>
+        <label>
+            Geben Sie ihren Namen ein:
+            <input id="name">
+            <button type="submit">Absenden</button>
+        </label>
+    </form>
+    <div id="echo"></div>
+    <script>
+        document.addEventListener("DOMContentLoaded", ()=>{
+           let form = document.querySelector("form");
+           let input = document.getElementById("name");
+           let echo = document.getElementById("echo");
+           form.onsubmit = (event) => {
+               event.preventDefault();
+               echo.innerHTML =  input.value;
+           };
+        });
+    </script>
+</body>
+</html>

@@ -1,15 +1,14 @@
 function a() {
-    let a = 1;
+    a1 = 1;  //mit 'use strict': ReferenceError: x is not defined
 }
 
 function c() {
     'use strict';
 
     function b() {
-        let b = 1;
+        b1 = 1; //error
     }
     b();
     a();
 }
 c();
-
