@@ -1,3 +1,7 @@
-/**
- * Created by mgfeller on 17.05.2017.
- */
+name = "Global!";
+
+function hallo(){
+    console.log(this.name);
+}
+
+hallo();
