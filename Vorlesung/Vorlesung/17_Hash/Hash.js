@@ -8,7 +8,7 @@ object["a"] = "a";
 fn["a"] = "a";
 
 
-console.log(array.length);
-console.log(object.length);
-console.log(fn.length);
+console.log(array, array.length);
+console.log(object, object.length);
+console.log(fn, fn.length);
 fn();
