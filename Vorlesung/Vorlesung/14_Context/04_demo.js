@@ -26,7 +26,6 @@ new hallo();
 // entspricht
 function newHallo(){
     var self = {}; // self = this (this ist schreibgeschütz)
-    self.name = "newHallo";
     console.log(self.name);
     return self;
 }
