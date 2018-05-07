@@ -1,6 +1,6 @@
-var array = [];
-var object = {};
-var fn = function(x){console.log(fn.a)};
+const array = [];
+const object = {};
+const fn = function(x){console.log(fn.a)};
 
 array["a"] = "a";
 array[4] = "a";
