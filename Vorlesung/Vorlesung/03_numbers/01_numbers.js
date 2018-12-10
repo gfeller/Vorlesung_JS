@@ -1,4 +1,4 @@
-var x = 1/3;
+let x = 1/3;
 console.log(0.3333333333333333 * 3 == 1);    //true
 console.log(x + x + x);                      //1
 console.log(0.3 + 0.7);                      //1

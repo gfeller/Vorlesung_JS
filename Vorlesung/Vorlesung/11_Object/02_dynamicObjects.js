@@ -1,4 +1,4 @@
-var person = {
+const person = {
     name : "Michael",
     hallo : function(){
         return "Hallo "+this.name;
@@ -14,7 +14,5 @@ person.hallo = function(){
 console.log(person.hallo());
 
 console.log("X");
-console.log = function(value) {
-
-};
+console.log = value => {};
 console.log("X");

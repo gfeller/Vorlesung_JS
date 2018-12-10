@@ -4,7 +4,7 @@ function Point(x, y){
     this.area = () => this.x + this.y;
 }
 
-var areaFn = new Point(10,50).area;
+const areaFn = new Point(10,50).area;
 console.log(areaFn());
 
 /*

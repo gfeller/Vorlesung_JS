@@ -1,4 +1,4 @@
-var arr = [ 'a', 'b', 'c' ];
+const arr = [ 'a', 'b', 'c' ];
 arr[0] = 'x';
 arr.push("d");
 console.log(arr);

@@ -1,6 +1,6 @@
-var y = 3;
-var x = 3 + y;
-var value = add(x, y);
+let y = 3;
+let x = 3 + y;
+const value = add(x, y);
 
 value > 10 ? console.log("Big") : console.log("Small");
 

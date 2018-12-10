@@ -1,4 +1,4 @@
-var div0 = 0 / 0;
+let div0 = 0 / 0;
 console.log( div0);             //NaN
 console.log( typeof(div0));     //number
 console.log( parseInt("abc"));  //NaN

@@ -15,10 +15,10 @@ var a = 2 * 4(a).toString();
 */
 
 
-function createUser(name) { 
-    return
-    {
-        name : name 
+function createUser(name) {
+    return
+    {
+        name : name
     }
 }
 

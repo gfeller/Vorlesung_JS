@@ -1,4 +1,4 @@
-var counter = {
+const counter = {
     value: 0
 };
 
@@ -11,7 +11,7 @@ counter.count();
 counter.count();
 console.log(counter.value);
 
-var fnCount = counter.count;
+const fnCount = counter.count;
 fnCount();
 fnCount();
 fnCount();

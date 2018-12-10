@@ -1,4 +1,4 @@
-var rect = {
+const rect = {
     width: 100,
     height: 100,
     area: function () {
@@ -7,7 +7,7 @@ var rect = {
 };
 
 console.log(1, rect.area());
-var areaFn = rect.area;
+const areaFn = rect.area;
 
 console.log(2, areaFn());
 console.log(3, areaFn.apply(rect));

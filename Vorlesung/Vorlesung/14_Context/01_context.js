@@ -3,7 +3,7 @@ function isGlobalThis()
     console.log(this == global);
 }
 
-var logEntry = {
+const logEntry = {
     date : Date.now(),
     data : "System crash",
     isGlobalThis : isGlobalThis,

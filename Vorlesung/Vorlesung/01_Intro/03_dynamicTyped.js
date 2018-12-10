@@ -1,4 +1,4 @@
-var foo;
+let foo;
 foo = "Michael";
 console.log(foo + " is a " + typeof(foo));
 foo = 42;

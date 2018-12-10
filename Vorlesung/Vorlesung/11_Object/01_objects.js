@@ -1,4 +1,4 @@
-var person = {
+const person = {
     name : "Michael",
     hallo : function(){
         return "Hallo "+this.name;

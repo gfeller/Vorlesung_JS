@@ -1,12 +1,7 @@
-function say(text, count) {
-    count = count || 1;
-    var output = "";
-    for (var i = 0; i < count; ++i) {
-        output += " " + text;
-    }
-    console.log("I say " + output);
+function say(name = "unknown Person") {
+    console.log(`Hi ${name}!`);
 }
 
+say();
+say("Michael");
 
-say("hi");
-say("hi", 3);
