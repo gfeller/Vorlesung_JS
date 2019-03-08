@@ -1,7 +1,7 @@
 const person = {
     name : "Michael",
     hallo : function(){
-        return "Hallo "+this.name;
+        return `Hallo ${this.name}`;
     }
 };
 

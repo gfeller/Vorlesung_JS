@@ -1,9 +1,9 @@
-var result = [4,2,1,5].map(function(x){ return x - 3}).filter(function(x){return x > 0}).sort();
+const result = [4,2,1,5].map(function(x){ return x - 3}).filter(function(x){return x > 0}).sort();
 console.log(result);
 
 
-var result = [4,2,1,5]
+const result2 = [4,2,1,5]
     .map(function(x){ return x - 3})
     .filter(function(x){return x > 0})
     .sort();
-console.log(result);
+console.log(result2);

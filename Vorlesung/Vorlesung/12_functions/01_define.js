@@ -11,5 +11,5 @@ var hallo2 = function(){
 hallo2();
 
 //Funktionen können einer Variable zugewiesen werden
-var foo = hallo;
+const foo = hallo;
 foo();
