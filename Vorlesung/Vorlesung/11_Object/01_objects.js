@@ -11,7 +11,7 @@ person.name = "Bob";
 console.log(person.hallo());
 
 
-var mySimpleObject = {};
+const mySimpleObject = {};
 mySimpleObject.name = "Michael";
 mySimpleObject.hallo =  function(){
     return "Hallo "+this.name;
