@@ -1,9 +1,9 @@
-var symbol1 = Symbol("symbol1");
-var symbol2 = Symbol("symbol1");
+const symbol1 = Symbol("symbol1");
+const symbol2 = Symbol("symbol1");
 console.log(1, symbol1 == symbol2);
 
 function createLogin(pin, name){
-    var pinProp = Symbol("pin");
+    const pinProp = Symbol("pin");
     return {
         [pinProp] : pin,
         name,
@@ -12,7 +12,7 @@ function createLogin(pin, name){
         }}
 }
 
-var token = createLogin("1234", "Michael");
+const token = createLogin("1234", "Michael");
 console.log(2, token.login("1111"));
 console.log(3, token.login("1234"));
 console.log(4, token);
