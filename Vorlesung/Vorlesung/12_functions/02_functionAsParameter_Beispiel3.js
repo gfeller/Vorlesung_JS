@@ -1,5 +1,7 @@
 console.log("Hello");
 
-setTimeout(function(){
+function world(){
     console.log("World")
-}, 1000);
+}
+
+setTimeout(world, 1000);
