@@ -14,4 +14,4 @@ function get(id) {
     return data[0];
 }
 
-module.exports = {update, get};
+export {update, get};
