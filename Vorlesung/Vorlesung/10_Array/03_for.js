@@ -6,28 +6,28 @@ for( let i=0; i<arr.length; ++i )
     console.log("for",arr[i]);
 }
 
-for(let x in arr)
+for(const x in arr)
 {
     console.log("for in", x + ":" + arr[x]);
 }
 
-for(let y in dummy)
+for(const y in dummy)
 {
     console.log("dummy has property", y);
 }
 
-for(let z of arr)
+for(const z of arr)
 {
     console.log("for of", z);
 }
 
 /*
-for(let y in "Hallo")
+for(const y in "Hallo")
 {
     console.log("String", y);
 }
 
-for(var y of "Hallo")
+for(const y of "Hallo")
 {
     console.log("String", y);
 }

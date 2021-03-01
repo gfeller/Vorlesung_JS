@@ -9,7 +9,7 @@ function hallo(){
 hallo();
 
 
-var dummy = {name : "Bob"};
+const dummy = {name : "Bob"};
 dummy.hallo = hallo;
 dummy.hallo();
 //change hallo to => this.name;
@@ -18,7 +18,7 @@ dummy.hallo();
 // --------
 
 //2 regel => functionen ohne object haben this = global
-var hallo2 = dummy.hallo;
+const hallo2 = dummy.hallo;
 hallo2();
 
 //3 regel => mit new wird this gleich ein empty object;
@@ -29,12 +29,12 @@ function newHallo(){
     console.log(self.name);
     return self;
 }
-var newHalloInstance = newHallo();
+const newHalloInstance = newHallo();
 
 //..........................................................
-var test = {name : "hallo"}
+const test = {name : "hallo"}
 hallo();
 hallo.call(test);
 
-var bindHallo = hallo.bind(test);
+const bindHallo = hallo.bind(test);
 bindHallo();

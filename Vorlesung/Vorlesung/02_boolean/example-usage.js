@@ -1,5 +1,2 @@
-function test(anzahl){
-    console.log(anzahl || 3);
-}
-test();
-test(10);
+const theAnswer = parseFloat("abc") || 42;
+console.log(theAnswer)

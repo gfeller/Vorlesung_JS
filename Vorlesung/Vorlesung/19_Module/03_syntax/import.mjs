@@ -4,12 +4,18 @@ import defaultExport from "./export.mjs"
 import * as exportLib from "./export.mjs"
 
 console.log(a);
+
 incA();
 console.log(tmpA);
+
 tmpIncA();
 console.log(defaultExport.a);
+
 defaultExport.incA();
 console.log(exportLib.a);
-exportLib.incA();
 
+exportLib.incA();
 console.log(a);
+
+// default export is part of namespace
+console.log(exportLib);

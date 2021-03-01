@@ -1,6 +1,6 @@
 function isGlobalThis()
 {
-    console.log(this == global);
+    console.log(this === global);
 }
 
 const logEntry = {
@@ -16,5 +16,5 @@ isGlobalThis();
 logEntry.isGlobalThis();
 logEntry.showEntry();
 
-var showEntry = logEntry.showEntry;
+const showEntry = logEntry.showEntry;
 showEntry();

@@ -1,4 +1,4 @@
-function funcA() {
+    function funcA() {
     throw new Error("A");
 }
 
