@@ -11,10 +11,6 @@ for(const x in arr)
     console.log("for in", x + ":" + arr[x]);
 }
 
-for(const y in dummy)
-{
-    console.log("dummy has property", y);
-}
 
 for(const z of arr)
 {
@@ -22,6 +18,12 @@ for(const z of arr)
 }
 
 /*
+
+for(const y in dummy)
+{
+    console.log("dummy has property", y);
+}
+
 for(const y in "Hallo")
 {
     console.log("String", y);
