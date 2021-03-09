@@ -1,15 +1,7 @@
-// 'use strict';
+'use strict';
 try {
     var a = 12;
     b = 12;
-}
-catch( error )
-{
-    console.log(error);
-}
-
-try {
-    undefined = "Hallo"
 }
 catch( error )
 {
