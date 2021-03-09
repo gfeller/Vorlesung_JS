@@ -1,4 +1,4 @@
-'use strict';
+// 'use strict';
 try {
     var a = 12;
     b = 12;
