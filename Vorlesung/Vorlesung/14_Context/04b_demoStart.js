@@ -4,4 +4,4 @@ function hallo(){
     console.log(this.name);
 }
 
-hallo();
+const dummy = {"name" : "bob"};
