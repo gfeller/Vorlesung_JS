@@ -1,4 +1,4 @@
-counter = 999;
+globalThis.counter = 999;
 const object = {
     counter: 3,
     foo: function () {

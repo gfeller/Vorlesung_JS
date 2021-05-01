@@ -1,14 +1,15 @@
 a = "A"; //wird auf das globale Objekt gelegt
 var b = "B";  // wird auf den aktuellen Scope gelegt
-
-function foo(){
-    c = "C";
-    var d = "D";
+let c = "C" // let, const werden nicht mehr auf das globale Objekt gelegt
+function foo() {
+    d = "D";
+    var e = "E";
 }
+
 foo();
 
-var globalObject = typeof(global) === "undefined" ? window : global; // browser oder node js
-console.log(globalObject.a);
-console.log(globalObject.b);
-console.log(globalObject.c);
-console.log(globalObject.d);
+console.log(globalThis.a);
+console.log(globalThis.b);
+console.log(globalThis.c, c);
+console.log(globalThis.d);
+console.log(globalThis.e);

@@ -2,16 +2,16 @@ var alphabet = ["A", "B", "C", "D", "E"];
 
 function getIndexOf(value) {
     for (i = 0; i < alphabet.length; i++) {
-        if(value == alphabet[i]) {
+        if (value === alphabet[i]) {
             return i;
         }
     }
 }
-function getIndexOfElements(toMap)
-{
+
+function getIndexOfElements(toMap) {
     result = new Array(toMap.length);
     for (i = 0; i < toMap.length; i++) {
-        result[i] =  getIndexOf(toMap[i]);
+        result[i] = getIndexOf(toMap[i]);
     }
     return result;
 }
