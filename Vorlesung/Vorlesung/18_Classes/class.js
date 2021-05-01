@@ -42,7 +42,7 @@ class AlarmClock extends Clock { //  inheritance
     }
 
     registerAlarm(time, callback) {  // method
-        if (+time > +this.currentTime && this.#timer) {
+        if (+time > +this.currentTime && !this.#timer) {
             this.#timer = setTimeout(() => {
                 callback()
                 this.#clearTimer();
@@ -67,7 +67,7 @@ class AlarmClock extends Clock { //  inheritance
 const alarmClock = new AlarmClock();
 const alarmTime = new Date(+new Date() + 2000) // 2 sec in future;
 alarmClock.registerAlarm(alarmTime, () => console.log("ring, ring!"))
-alarmClock.time = new Date();
+// alarmClock.time = new Date();
 
 console.log(alarmClock instanceof AlarmClock);
 console.log(alarmClock instanceof Clock);
