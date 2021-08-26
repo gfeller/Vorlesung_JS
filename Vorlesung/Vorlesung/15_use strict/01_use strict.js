@@ -1,4 +1,4 @@
-// 'use strict';
+//'use strict';
 try {
     var a = 12;
     b = 12;
@@ -9,13 +9,13 @@ catch( error )
 }
 
 try {
-    var obj2 = { get x() { return 17; } };
-    obj2.x = 5;
+    undefined = false;
 }
 catch( error )
 {
     console.log(error);
 }
+
 
 
 function x(a,a){ //same parameter name
