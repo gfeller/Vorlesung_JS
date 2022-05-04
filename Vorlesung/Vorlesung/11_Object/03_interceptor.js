@@ -6,10 +6,10 @@ framework();
 const log = console.log;
 
 console.log = function(){
-    log("server-call", ...arguments); //send to logging framework
+    console.error("[send to server]", ...arguments); //send to logging framework
 
-    //console.log("intercept", ...arguments); //error!
-    log.call(console, "intercept", ...arguments); //call sets *this* correctly
+    // call the original log-function
+    log.call(console,  ...arguments); //call sets *this* correctly
 };
 framework();
 
