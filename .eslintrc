@@ -16,6 +16,6 @@
     "rules": {
         "prefer-const" : "warn",
         "no-var": "warn",
-        "no-console": "off"  
+        "no-console": "off"
     }
 }
