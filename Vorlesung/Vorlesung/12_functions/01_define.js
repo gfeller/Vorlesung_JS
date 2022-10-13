@@ -13,3 +13,7 @@ hallo2();
 //Funktionen können einer Variable zugewiesen werden
 const foo = hallo;
 foo();
+
+// arrow functions / lambda
+const foo2 = (value) => console.log(value)
+foo2("value")
