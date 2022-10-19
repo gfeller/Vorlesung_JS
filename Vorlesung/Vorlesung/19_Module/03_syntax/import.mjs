@@ -3,13 +3,13 @@ import {a as tmpA, incA as tmpIncA} from "./export.mjs"
 import defaultExport from "./export.mjs"
 import * as exportLib from "./export.mjs"
 
-console.log(a);
+console.log( a);
 
 incA();
-console.log(tmpA);
+console.log( a);
 
 tmpIncA();
-console.log(defaultExport.a);
+console.log( tmpA);
 
 defaultExport.incA();
 console.log(exportLib.a);
