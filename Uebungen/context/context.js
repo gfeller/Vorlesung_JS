@@ -10,14 +10,14 @@ const foo = object.foo;
 
 object.foo();
 foo();
-foo.apply({counter: 10});
+foo.call({counter: 10});
 
 object2.foo = foo;
 object2.foo();
 
 const newFoo = foo.bind({counter: 11});
 newFoo();
-newFoo.apply({counter: 12});
+newFoo.call({counter: 12});
 
 //advanced
 new foo();
