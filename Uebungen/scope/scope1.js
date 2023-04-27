@@ -6,7 +6,7 @@ function scope()
         console.log(1, c); // weshalb crasht c?
     }
     catch(e){
-        console.log(1, e);
+        console.log(1, e.message);
     }
     var b = 10;
     c = "ABC";
