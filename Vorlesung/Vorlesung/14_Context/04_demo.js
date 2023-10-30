@@ -23,13 +23,16 @@ hallo2();
 
 //3 regel => mit new wird this gleich ein empty object;
 new hallo();
+new hallo() instanceof hallo
+
 // entspricht
 function newHallo(){
     var self = {}; // self = this (this ist schreibgeschütz)
     console.log(self.name);
     return self;
 }
-const newHalloInstance = newHallo();
+const newHalloInstance = new newHallo();
+
 
 //..........................................................
 const test = {name : "hallo"}
