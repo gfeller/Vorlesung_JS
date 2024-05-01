@@ -10,5 +10,5 @@ function foo(name){
     console.log(Array.from(arguments).join("\n"));
 }
 
-foo("Michael", "Gfeller", "HSR", "IFS");
+foo("Michael", "Gfeller", "OST", "I3");
 

@@ -3,5 +3,5 @@ function foo(name, ...params){
     console.log(2,params.join(";"));
 }
 
-foo("Michael", "Gfeller", "HSR", "IFS");
+foo("Michael", "Gfeller", "OST", "I3  ");
 
