@@ -1,3 +1,4 @@
+
 class Person {
     constructor(name) {
         this.name = name;
@@ -26,6 +27,7 @@ alarm.registerAlarm(person.wackUp);
 
 // Solution 1: Context beibehalten:
 alarm.registerAlarm(() => person.wackUp());
+alarm.registerAlarm(person.wackUp.bind(person));
 
 
 // Solution 2: Methode als "arrow"
