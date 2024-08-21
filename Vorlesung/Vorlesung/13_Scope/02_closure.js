@@ -1,4 +1,4 @@
-function counter(){
+function createCounter(){
     let count = 10;
 
     function incr(){
@@ -7,10 +7,8 @@ function counter(){
         count++;
         return count;
     }
-    return {incr};
+    return incr;
 }
 
-const obj = counter();
-const inc = counter().incr;
-console.log(obj.count, obj.incr()); // undefined
-console.log(inc()); // 11
+const counter = createCounter();
+console.log(counter(), counter()); // 11 12
