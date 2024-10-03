@@ -3,8 +3,12 @@ const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout,
 });
-rl.question(`Welchen Service?\n0:Kündigung\n1:Bestellung\n2:Information\n`, selected => {
-    if(Number(selected)){
+rl.question(`Welchen Service?
+0:Kündigung
+1:Bestellung
+2:Information
+`, selected => {
+    if(Number(selected)){  // was passiert bei einer '0'?
         console.log("selected", selected);
     }
     else{
