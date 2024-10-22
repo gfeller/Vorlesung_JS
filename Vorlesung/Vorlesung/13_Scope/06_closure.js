@@ -1,12 +1,13 @@
-function closure(){
+function fn(){
     let i = 1;
 }
-console.log(i); // --> error;
+console.log(i, fn.i); // --> error;
 
 
-function closure2() {
+function createClosure() {
     let i = 1;
-    return () => i;
+    const closure = () => i;
+    return closure;
 }
-let tmpClosure = closure2();
-console.log(tmpClosure()); // --> Zugriff auf i vom Scope "closure2";
+let closureFn = createClosure();
+console.log(closureFn()); // --> Zugriff auf i vom Scope "closure2";
