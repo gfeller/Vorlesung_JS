@@ -29,5 +29,6 @@ export default [...compat.extends("eslint:recommended"), {
         "prefer-const": "warn",
         "no-var": "warn",
         "no-console": "off",
+        "no-unused-vars": "off"
     },
 }];
