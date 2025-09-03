@@ -21,7 +21,7 @@ export default [...compat.extends("eslint:recommended"), {
             global: "readonly",
         },
 
-        ecmaVersion: 2018,
+        ecmaVersion: 2024,
         sourceType: "module",
     },
 

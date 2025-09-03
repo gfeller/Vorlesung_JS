@@ -6,7 +6,7 @@ const items = [
 ];
 
 const sortType = {
-    "string": (a, b) => a > b ? 1 : a < b ? -1 : 0,
+    "string": (a, b) => a.localeCompare(b),
     "number": (a, b) => a - b
 }
 
