@@ -1,20 +1,18 @@
-function Point(x, y){
-    this.x = x;
-    this.y = y;
-    this.area = () => this.x + this.y;
-}
+class Point {
+    constructor(x, y) {
+        this.x = x;
+        this.y = y;
+    }
 
-const areaFn = new Point(10,50).area;
-console.log(areaFn());
-
-/*
-function Point(x, y) {
-    var _this = this;
-
-    this.x = x;
-    this.y = y;
-    this.area = function () {
-        return _this.x + _this.y;
+    areaFn() {
+        return this.x + this.y
+    };
+    areaArrow = () => {
+        return this.x + this.y;
     };
 }
-*/
+
+const areaFn = new Point(10, 50).areaFn;
+const areaArrow = new Point(10, 50).areaArrow;
+console.log(areaArrow()); // 60
+console.log(areaFn()); // -> Cannot read properties of undefined (reading 'x')
